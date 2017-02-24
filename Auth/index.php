@@ -10,7 +10,7 @@
 
       <link rel="stylesheet" href="css/style.css">
 <script>
-
+//not working...
 function checkSubmit()
 {
 var password = document.getElementById("Spass").value;

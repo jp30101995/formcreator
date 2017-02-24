@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			      VALUES ('".$username."', '".$email."', '".$pass."')";
 			$result2 = mysqli_query($conn, $sql2);
 			//display form...	
+			header("../dashboard.php");
 		}
 		else{
 			echo "<script>alert('Username already exists')</script>";

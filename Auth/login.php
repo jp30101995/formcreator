@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         	if($row['Password'] == $pass){
         		//display form
         		echo "login su";
+        		header("Location: ../dashboard.php");
         	}
         	else{
         		echo "<script>alert('Incorrect password')</script>";

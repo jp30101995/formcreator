@@ -32,7 +32,7 @@ $disp = new Disp($conn);
 	  <div class="row">
 		  <!-- form left panel -->
 		  <div class="col-md-4">
-			<ul class="nav nav-tabs">
+		  	<ul class="nav nav-tabs">
 			  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
 			  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
 			  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
@@ -112,6 +112,10 @@ function myFunction(id) {
     $("#selected").append("<li id="+count+" onclick='formCreator("+id+","+count+")' class='btn btn-default btn-block'>Upload</li>");
 	if(id==9)
     $("#selected").append("<li id="+count+" onclick='formCreator("+id+","+count+")' class='btn btn-default btn-block'>List</li>");
+	if(id==10)
+    $("#selected").append("<li id="+count+" onclick='formCreator("+id+","+count+")' class='btn btn-default btn-block'>Password</li>");
+	if(id==11)
+    $("#selected").append("<li id="+count+" onclick='formCreator("+id+","+count+")' class='btn btn-default btn-block'>Email</li>");
 }
 
 
